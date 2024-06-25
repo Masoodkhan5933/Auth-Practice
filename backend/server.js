@@ -26,7 +26,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 db.mongoose
-  .connect(process.env.db, {
+  .connect(process.env.DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
@@ -40,9 +40,9 @@ db.mongoose
   });
 
 // simple route
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to bezkoder application." });
-// });
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Masood Khan application.   FOR CHECKING DEPLOYMENT" });
+});
 
 
 // routes
