@@ -25,19 +25,28 @@ app.use(express.urlencoded({ extended: true }));
 const db = require("./app/models");
 const Role = db.role;
 
+// Use the environment variable for MongoDB connection
+const mongoURI = process.env.db;
+
+if (!mongoURI) {
+  console.error("Error: MongoDB connection string is not defined in environment variables.");
+  process.exit(1);
+}
+
 db.mongoose
-  .connect(process.env.DB, {
+  .connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
   .then(() => {
-    console.log("Successfully connect to MongoDB.");
+    console.log("Successfully connected to MongoDB.");
     initial();
   })
   .catch(err => {
     console.error("Connection error", err);
     process.exit();
   });
+
 
 // simple route
 app.get("/", (req, res) => {
