@@ -26,7 +26,7 @@ const db = require("./app/models");
 const Role = db.role;
 
 db.mongoose
-  .connect("mongodb+srv://masoodkhan5933:fHgjNwweP2KuFTpb@cluster1.ojirixc.mongodb.net/", {
+  .connect(process.env.db, {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
