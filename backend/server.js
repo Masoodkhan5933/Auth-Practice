@@ -49,9 +49,9 @@ db.mongoose
 
 
 // simple route
-app.get("/", (req, res) => {
-  res.json({ message: "Welcome to Masood Khan application.   FOR CHECKING DEPLOYMENT" });
-});
+// app.get("/", (req, res) => {
+//   res.json({ message: "Welcome to Masood Khan application.   FOR CHECKING DEPLOYMENT" });
+// });
 
 
 // routes
