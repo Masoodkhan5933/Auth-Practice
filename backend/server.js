@@ -9,9 +9,9 @@ const app = express();
 
 const corsOptions = {
   origin: [
-    'https://auth-practice-peach.vercel.app',
+    'https://auth-practice-frontend.onrender.com',
     'http://localhost:3000',
-    'https://auth-practice-gb5c.onrender.com'
+    'https://auth-practice-kk54avy8m-masoodkhan5933s-projects.vercel.app'
   ],
   credentials: true,  // Allow credentials like cookies to be sent
 };

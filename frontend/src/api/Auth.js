@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 
-const backendURL = 'http://localhost:2000';
-// const backendURL = 'https://auth-practice-gb5c.onrender.com';
+// const backendURL = 'http://localhost:2000';
+const backendURL = 'https://auth-practice-gb5c.onrender.com';
 
 // User signup
 const signup = async (userData) => {
