@@ -2,7 +2,7 @@
   "name": "authpractice",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://auth-practice-gb5c.onrender.com",
+  "proxy": "https://auth-practice-gjx4.onrender.com",
   "dependencies": {
     "@headlessui/react": "^2.1.0",
     "@testing-library/jest-dom": "^5.17.0",
