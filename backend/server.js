@@ -8,7 +8,7 @@ const dbConfig = require("./app/config/db.config");
 const app = express();
 
 const corsOptions = {
-  origin: 'http://localhost:3000',  // Allow requests from localhost:3000
+  origin: 'https://auth-practice-peach.vercel.app/',  // Allow requests from localhost:3000
   credentials: true,  // Allow credentials like cookies to be sent
 };
 
@@ -49,9 +49,9 @@ db.mongoose
 
 
 // simple route
-// app.get("/", (req, res) => {
-//   res.json({ message: "Welcome to Masood Khan application.   FOR CHECKING DEPLOYMENT" });
-// });
+app.get("/", (req, res) => {
+  res.json({ message: "Welcome to Masood Khan application.   FOR CHECKING DEPLOYMENT" });
+});
 
 
 // routes
