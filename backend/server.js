@@ -8,7 +8,11 @@ const dbConfig = require("./app/config/db.config");
 const app = express();
 
 const corsOptions = {
-  origin: 'https://auth-practice-peach.vercel.app/',  // Allow requests from localhost:3000
+  origin: [
+    'https://auth-practice-peach.vercel.app/',
+    'http://localhost:3000',
+    'https://auth-practice-gb5c.onrender.com/'
+  ],
   credentials: true,  // Allow credentials like cookies to be sent
 };
 
